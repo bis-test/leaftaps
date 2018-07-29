@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="password" value="crmsfa"/>
+  <parameter name="userName" value="DemoSalesManager"/>
+  <parameter name="url" value="http://leaftaps.com/opentaps"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="leaf.Contact.EditContact">
+        <methods>
+          <include name="editContact"/>
+          <include name="closeApp"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- leaf.Contact.EditContact -->
+      <class name="leaf.Contact.CreateContact">
+        <methods>
+          <include name="createContact"/>
+          <include name="closeApp"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- leaf.Contact.CreateContact -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
